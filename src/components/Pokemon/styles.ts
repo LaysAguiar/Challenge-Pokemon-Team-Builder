@@ -8,32 +8,22 @@ type ContainerProps = {
 export const Container = styled.div<ContainerProps>`
     cursor: pointer;
     position: relative;
-    width: 5.875rem;
-    height: 7.875rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    width: 5rem;
+    padding-top: 0.5rem;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 0.5rem;
-    overflow: hidden;
+    margin-top: 1rem;
+    
 
     .chosen{
     position: absolute;
     display: flex;
-    width: 2rem;
+    width: 2.25rem;
+    height: 2.25rem;
     background: #90d861c4;
-    height: 2rem;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -61,21 +51,21 @@ background: #90ADC6;
 }
 
 .pokemon {
-  display: flex;
+    display: flex;
     align-items: center;
-    width: 2.813rem;
-    height: 2.813rem;
-    min-height: 2.813rem;
-    width: 2.813rem;
+    min-height:2.813rem;
+    min-width:2.813rem;
     object-fit: cover;
     image-rendering: pixelated;
     margin-bottom: 0.125rem;
     justify-content: center;
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+     display: flex;
+    position: absolute;
+      width: 2.813rem;
+      height: 2.813rem;
+
     }
 }
 

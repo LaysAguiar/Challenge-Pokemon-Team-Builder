@@ -90,7 +90,6 @@ gap: 1.938rem;
 
   img{ 
     position: absolute;
-    height: 100%;
     z-index: 2;
     width: 100%;
     object-fit: fill;

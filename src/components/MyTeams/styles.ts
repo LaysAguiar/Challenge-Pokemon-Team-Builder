@@ -43,10 +43,11 @@ gap: 1.938rem;
 
   img{ 
     position: absolute;
-    height: 100%;
+    width:5.466rem;
+    height: 5.466rem;
     z-index: 2;
     width: 100%;
-    object-fit: cover;
+    
   }
 }
 `;
