@@ -16,7 +16,7 @@ type IteamContextData = {
   team: Pokemon[] | undefined;
   setTeam: React.Dispatch<React.SetStateAction<Pokemon[]>>;
   removeMember: Pokemon[] | undefined;
-  setRemoveMenber: React.Dispatch<React.SetStateAction<Pokemon[]>>;
+  setRemoveMember: React.Dispatch<React.SetStateAction<Pokemon[]>>;
   isChange: boolean;
   setIsChange: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -29,7 +29,7 @@ interface teamProviderProps {
 
 export function TeamProvider({ children }: teamProviderProps) {
   const [team, setTeam] = useState([]);
-  const [removeMember, setRemoveMenber] = useState([]);
+  const [removeMember, setRemoveMember] = useState([]);
   const [isChange, setIsChange] = useState(false);
 
   return (
@@ -38,7 +38,7 @@ export function TeamProvider({ children }: teamProviderProps) {
         setTeam,
         team,
         removeMember,
-        setRemoveMenber,
+        setRemoveMember,
         isChange,
         setIsChange,
       }}

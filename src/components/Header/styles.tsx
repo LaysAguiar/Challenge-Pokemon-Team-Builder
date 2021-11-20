@@ -20,9 +20,15 @@ export const HeaderContainer = styled.header`
           text-align: center;
           text-transform: uppercase;
           color:var(--white);
+          cursor: pointer;
+          transition: all 1s;
+           &:hover{
+              color: #27272dcc;
+                
+           }
      }
 `;
-     export const Divider = styled.div`
+export const Divider = styled.div`
      height: 0.063rem;
      width: 84.60%;
      background:var(--white);

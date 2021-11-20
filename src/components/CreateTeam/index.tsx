@@ -13,7 +13,6 @@ export const CreateTeam = () => {
     setTeam,
     isChange,
     setIsChange,
-    setRemoveMenber,
   } = useTeam();
 
   const [isEdit, setIsEdit] = useState(false);
@@ -26,7 +25,6 @@ export const CreateTeam = () => {
       );
       team.splice(foundedPokemon, 1);
       setTeam([...team]);
-      setRemoveMenber([]);
       setIsChange(!isChange);
     });
   };

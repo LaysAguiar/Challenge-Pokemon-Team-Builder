@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout title="Create Team | PokeTeam">
       <Header href="/teams" title="Team" />
       <CreateTeam />
       <ChoosePokemon pokemons={pokemons} />

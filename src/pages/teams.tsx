@@ -20,7 +20,7 @@ const Teams: NextPage = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout title="Team | PokeTeam">
       <Header href="/" title="Create Team" />
       {teams.map((item) => (
         <MyTeams key={item.id} team={item} />

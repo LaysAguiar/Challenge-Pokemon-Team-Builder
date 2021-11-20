@@ -18,12 +18,19 @@ type Pokemon = {
 };
 
 export const Pokemon = ({ pokemon }) => {
-  const { team, setTeam, isChange } = useTeam();
+  const { team, setTeam, isChange, removeMember, setRemoveMember } = useTeam();
 
   const [chosen, setChosen] = useState(false);
 
   useEffect(() => {
-    setChosen(false);
+
+    removeMember.map((item) => {
+      if (item.id === pokemon.id) {
+        setChosen(false);
+      }
+
+      setRemoveMember([]);
+    });
   }, [isChange]);
 
   const handleSelectPokemon = (poke: Pokemon) => {

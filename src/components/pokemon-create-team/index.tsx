@@ -15,7 +15,7 @@ type Pokemon = {
 };
 
 export const PokemonCreateTeam = ({ pokemon }: Pokemon) => {
-  const { removeMember, setRemoveMenber, isChange } = useTeam();
+  const { removeMember, setRemoveMember, isChange } = useTeam();
 
   const [focus, setFocus] = useState(false);
 
@@ -43,7 +43,17 @@ export const PokemonCreateTeam = ({ pokemon }: Pokemon) => {
         img: poke.img,
       };
 
-      setRemoveMenber([...removeMember, pokemonObject]);
+      setRemoveMember([...removeMember, pokemonObject]);
+    }
+
+    if (focus) {
+      setFocus(!focus);
+
+      const foundedPokemon = removeMember.findIndex(
+        (remove) => remove.id === poke.id
+      );
+      removeMember.splice(foundedPokemon, 1);
+      setRemoveMember([...removeMember]);
     }
   };
 

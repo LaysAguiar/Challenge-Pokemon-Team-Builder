@@ -12,7 +12,7 @@ type PokeColors = {
   steel: string;
   fairy: string;
   ghost: string;
-  eletric: string;
+  electric: string;
   water: string;
   ice: string;
   rock: string;
@@ -36,7 +36,7 @@ export const pokeColors: PokeColors = {
   psychic: "#DA3063",
   steel: "#8F8E9E",
   water: "#5CC1ED",
-  eletric: "#F4CB38",
+  electric: "#F4CB38",
   ice: "#9BDEFB",
   flying: "#5D74D5",
   rock: "#9D853C",

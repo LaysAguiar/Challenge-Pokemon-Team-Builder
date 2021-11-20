@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
 
           <link
@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
 
           <link
             rel="icon"
-            href="/favicon.svg"
+            href="/favicon.ico"
             type="image/svg+xml"
             sizes="any"
           />
