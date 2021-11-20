@@ -31,11 +31,17 @@ export const Pokemon = ({ pokemon }) => {
 
       setRemoveMember([]);
     });
+
     team.map((item) => {
       if (pokemon.id === item.id) {
         setChosen(true);
       }
     })
+
+    if (team.length === 0) {
+      setChosen(false)
+    }
+
   }, [isChange]);
 
   const handleSelectPokemon = (poke: Pokemon) => {

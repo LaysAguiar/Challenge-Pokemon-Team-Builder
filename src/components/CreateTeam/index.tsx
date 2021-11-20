@@ -43,11 +43,13 @@ export const CreateTeam = () => {
       pokemons: arrTeam,
     };
 
-    console.log(createTeam);
+
 
     await api.post("pokeTeam", createTeam);
 
     setTeam([]);
+
+    setIsChange(!isChange);
   };
 
   return (
