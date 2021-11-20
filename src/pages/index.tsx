@@ -1,12 +1,13 @@
+import CircularProgress from "@material-ui/core/CircularProgress"
 import { Layout } from "components/Layout";
-
 import { Header } from "components/Header";
 import type { NextPage } from "next";
 import { CreateTeam } from "components/CreateTeam";
 import { ChoosePokemon } from "components/ChoosePokemon";
+
 import { useEffect, useState } from "react";
 import { api } from "services/api";
-import { useTeam } from "contexts/TeamContext";
+
 
 const Home: NextPage = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -26,7 +27,8 @@ const Home: NextPage = () => {
     <Layout title="Create Team | PokeTeam">
       <Header href="/teams" title="Team" />
       <CreateTeam />
-      <ChoosePokemon pokemons={pokemons} />
+      {pokemons.length === 0 ? <CircularProgress color="inherit" /> :
+        <ChoosePokemon pokemons={pokemons} />}
     </Layout>
   );
 };

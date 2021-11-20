@@ -30,8 +30,8 @@ gap: 1.938rem;
 
 & .pokeball {
   position: relative;
-  min-height: 6rem;
-  min-width: 6rem;
+  min-height: 5.466rem;
+  min-width: 5.466rem;
   align-items: center;
   display: flex;
   justify-content:center;

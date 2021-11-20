@@ -93,7 +93,7 @@ gap: 1.938rem;
     z-index: 2;
     width: 5.446rem;
     height: 5.446rem;
-    object-fit: fill;
+    object-fit: fill; 
     padding: 0.1rem;
   }
 }
